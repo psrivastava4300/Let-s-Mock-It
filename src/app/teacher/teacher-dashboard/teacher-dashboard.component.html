@@ -1,0 +1,27 @@
+<body>
+<div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+        <div class="col mb-auto mt-4" *ngFor="let chapter of chapters">
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFeMhuevzyv6ioB3_YmyTAvbrFQXoKWJYzeg&usqp=CAU" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{chapter.title}}</h5>
+              <p class="card-text">{{chapter.description}}</p>
+              <a href="#" class="btn btn-success">Manage Questions</a>
+              <div class="buttons">
+              <a href="#" class="btn btn-success mt-2">Manage Students</a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-auto mt-auto ">
+            <div class="card">
+              <img src="../../../assets/add.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <a href="#" class="btn btn-outline-danger btn-sm btn-block">Add Chapter</a>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
