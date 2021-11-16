@@ -1,8 +1,8 @@
 export class Student {
-    id: number;
+    id?: number;
     name: string;
-    chapters: string[];
-    dob: Date;
+    chapters?: string[]; 
+    enrollment: number;
     email: string;
-    password: string;
+    password?: string;
 }

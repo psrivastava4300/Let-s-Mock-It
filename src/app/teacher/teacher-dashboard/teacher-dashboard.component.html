@@ -7,18 +7,18 @@
             <div class="card-body">
               <h5 class="card-title">{{chapter.title}}</h5>
               <p class="card-text">{{chapter.description}}</p>
-              <a href="#" class="btn btn-success">Manage Questions</a>
+              <a routerLink="/questions" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="btn btn-success">Manage Questions</a>
               <div class="buttons">
-              <a href="#" class="btn btn-success mt-2">Manage Students</a>
+              <a routerLink="/students" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="btn btn-success mt-2">Manage Students</a>
             </div>
             </div>
           </div>
         </div>
-        <div class="col mb-auto mt-auto ">
+        <div class="col mb-auto mt-10" style="padding-top: 10px;">
             <div class="card">
               <img src="../../../assets/add.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <a href="#" class="btn btn-outline-danger btn-sm btn-block">Add Chapter</a>
+                <a routerLink="/add_chapter" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="btn btn-outline-danger btn-sm btn-block">Add Chapter</a>
               </div>
             </div>
         </div>

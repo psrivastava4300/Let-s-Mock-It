@@ -7,6 +7,9 @@ import { TeacherDashboardComponent } from './teacher/teacher-dashboard/teacher-d
 import { TeacherProfileComponent } from './teacher/teacher-profile/teacher-profile.component';
 import { TestPageComponent } from './student/test-page/test-page.component';
 import { ResultComponent } from './student/result/result.component';
+import { AddChaptersComponent } from './teacher/add-chapters/add-chapters.component';
+import { ManageStudentsComponent } from './teacher/manage-students/manage-students.component';
+import { ManageQuestionsComponent } from './teacher/manage-questions/manage-questions.component';
 
 
 const routes: Routes = [
@@ -16,7 +19,10 @@ const routes: Routes = [
   { path: 'teacher_dashboard', component: TeacherDashboardComponent },
   { path: 'student_dashboard', component: StudentDashboardComponent },
   { path: 'test_page', component: TestPageComponent },
-  { path: 'result', component: ResultComponent }
+  { path: 'result', component: ResultComponent },
+  { path: 'add_chapter', component: AddChaptersComponent },
+  { path: 'students', component: ManageStudentsComponent },
+  { path: 'questions', component: ManageQuestionsComponent }
 ];
 
 @NgModule({
